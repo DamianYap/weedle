@@ -1,21 +1,24 @@
  body{
 	 background-color: #fffff;
  }
- *{
+
+*{
 	 box-sizing: border-box;
- }
+}
  
- .headerImage{
+.headerImage {
 	 display: block;
 	 margin-left: auto;
 	 margin-right: auto;
 	 width: 50%;
 	 height: 20;
- }
- h2 {
-	 text-align: center;
- }
+}
  
+#mainTitle {
+    text-align: center;
+    font-size: 70px;
+    font-family: "Helvetica"
+}
  /* Style the tab */
 .tab {
   overflow: hidden;
@@ -56,11 +59,13 @@
   border: 1px solid #ccc;
   border-top: none;
   text-align: center;
+
   
  /* table config - About page */ 
 } .column {
 	float:left;
 	width :50%;
+    margin-top: 10px;
 	padding: 10px;
 	height: 300px;
 }
@@ -69,4 +74,5 @@
 	display: table;
 	clear:both;
 }
+
 
