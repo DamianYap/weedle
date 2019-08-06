@@ -1,7 +1,9 @@
  body{
 	 background-color: #fffff;
  }
-
+ *{
+	 box-sizing: border-box;
+ }
  
  .headerImage{
 	 display: block;
@@ -54,5 +56,17 @@
   border: 1px solid #ccc;
   border-top: none;
   text-align: center;
-} 
+  
+ /* table config - About page */ 
+} .column {
+	float:left;
+	width :50%;
+	padding: 10px;
+	height: 300px;
+}
+/row.after {
+	content: "";
+	display: table;
+	clear:both;
+}
 
