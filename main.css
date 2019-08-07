@@ -1,3 +1,12 @@
+body{
+	 background-color: #ffffff;
+ }
+
+*{
+	 box-sizing: border-box; 
+}
+
+
 #mainTitle {
     text-align: center;
     font-size: 120%;
@@ -24,14 +33,6 @@ font-size: 2.5vw;
 
 }
  
-#mainTitle {
-    text-align: left;
-    font-size: 2vw;
-	padding-left: 20vw;
-	padding-right: 40vw;
-    font-family: "Helvetica"
-
-}
  /*Style the tab*/
 .tab {
   overflow: hidden;
@@ -75,7 +76,7 @@ font-size: 2.5vw;
   border: 1px solid #ccc;
   border-top: none;
   text-align: center;
-
+}
 
 /* table config - About page */ 
 .column {
@@ -90,4 +91,3 @@ row.after {
     display: table;
     clear:both;
 }
-
