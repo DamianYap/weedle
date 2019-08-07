@@ -1,4 +1,4 @@
- body{
+body{
 	 background-color: #ffffff;
  }
 
@@ -6,23 +6,35 @@
 	 box-sizing: border-box; 
 }
 
- 
+ /* Style the tab */
+.tab {
+  overflow: hidden;    
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;      
+}
+
 #mainTitle {
+    padding: 2.5%;
+    margin: 0;
     text-align: center;
-    font-size: 120%;
-	padding-left: 10.5%	;
-	padding-right: 18%;
-    font-family: "Helvetica";
-    margin: auto;
-    max-height: 100%;
-	padding-bottom: 0.8%;
-	padding-top: 0.8%;
-}   
+    font-size: 150%;
+    width: 100%;
+    font-family: "Helvetica"
+}
 
-
- h3{
-font-size: 2.5vw;
-	}
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50%;    
+  transition: 0.3s;
+  text-align: center;
+  font-size: 14px;
+}
 
 .headerImage {
 	 display: block;
@@ -31,41 +43,6 @@ font-size: 2.5vw;
 	 width: 50%;
 	 height: 20;
 }
- 
-#mainTitle {
-    text-align: left;
-    font-size: 2vw;
-	padding-left: 20vw;
-	padding-right: 40vw;
-    font-family: "Helvetica"
-
-}
- /* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  text-align: right;
-  display:flex;
-  margin: 0vw;
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: right;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 1vw 5vw;
-  transition: 0.3s;
-  text-align: center;   
-  font-size: 14px;
-}
-
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
@@ -86,17 +63,22 @@ font-size: 2.5vw;
 
   
  /* table config - About page */ 
-} .column {
+}
+ .column {
 	float:left;
-	width :50%;
+	width :40%;
     margin-top: 10px;
-	padding: 10px;
-	height: 300px;
+	padding: 1vw;
+	height: 30vw;
+	text-align: center;
+	
 }
 /row.after {
 	content: "";
 	display: table;
 	clear:both;
+	padding-left: 20vw;
 }
-
-
+.row{
+	padding-left: 15vw;
+}
