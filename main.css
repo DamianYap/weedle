@@ -68,18 +68,26 @@
 
   
  /* table config - About page */ 
-} .column {
+}
+ .column {
 	float:left;
-	width :50%;
+	width :40%;
     margin-top: 10px;
-	padding: 10px;
-	height: 300px;
+	padding: 1vw;
+	height: 30vw;
+	text-align: center;
+	
 }
 /row.after {
 	content: "";
 	display: table;
 	clear:both;
+	padding-left: 20vw;
 }
+.row{
+	padding-left: 15vw;
+}
+
 
 
 
