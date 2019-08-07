@@ -4,6 +4,7 @@
 
 *{
 	 box-sizing: border-box;
+	 
 }
  
 .headerImage {
@@ -16,8 +17,9 @@
  
 #mainTitle {
     text-align: left;
-    font-size: 2vw;
+    font-size: 1.3vw;
 	padding-left: 20vw;
+	padding-right: 40vw;
     font-family: "Helvetica"
 }
  /* Style the tab */
@@ -26,6 +28,7 @@
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   text-align: right;
+  margin: 0vw;
   padding-right: 25vw;
   display: flex;
   justify-content: right;
