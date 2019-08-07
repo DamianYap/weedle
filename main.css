@@ -15,8 +15,9 @@
 }
  
 #mainTitle {
-    text-align: center;
-    font-size: 70px;
+    text-align: left;
+    font-size: 2vw;
+	padding-left: 20vw;
     font-family: "Helvetica"
 }
  /* Style the tab */
@@ -24,9 +25,10 @@
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  text-align: center;
+  text-align: right;
+  padding-right: 25vw;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex-direction: row;
 }
 
