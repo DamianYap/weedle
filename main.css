@@ -1,5 +1,5 @@
  body{
-	 background-color: #fffff;
+	 background-color: #ffffff;
  }
 
 *{
@@ -11,16 +11,20 @@
 	 display: block;
 	 margin-left: auto;
 	 margin-right: auto;
-	 width: 50%;
+	 width: 70%;
 	 height: 20;
 }
  
 #mainTitle {
-    text-align: left;
-    font-size: 1.3vw;
+    text-align: center;
+    font-size: 5vw;
 	padding-left: 20vw;
-	padding-right: 40vw;
-    font-family: "Helvetica"
+	padding-right: 20vw;
+    font-family: "Helvetica";
+    margin: auto;
+    min-height: 10vw;
+    max-height: 15vw;
+    padding-top: 2vw
 }
  /* Style the tab */
 .tab {
@@ -28,9 +32,7 @@
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   text-align: right;
-  margin: 0vw;
-  padding-right: 25vw;
-  display: flex;
+  display:flex;
   justify-content: right;
   flex-direction: row;
 }
@@ -38,13 +40,13 @@
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  float: left;
+  float: right;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 1vw 5vw;
   transition: 0.3s;
-  text-align: center;
+  text-align: center;   
   font-size: 14px;
 }
 
