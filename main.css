@@ -14,16 +14,22 @@
 	 display: block;
 	 margin-left: auto;
 	 margin-right: auto;
-	 width: 50%;
+	 width: 70%;
 	 height: 20;
 }
  
 #mainTitle {
     text-align: left;
     font-size: 2vw;
+
+
 	padding-left: 20vw;
-	padding-right: 40vw;
-    font-family: "Helvetica"
+	padding-right: 20vw;
+    font-family: "Helvetica";
+    margin: auto;
+    min-height: 10vw;
+    max-height: 15vw;
+    padding-top: 2vw
 }
  /* Style the tab */
 .tab {
@@ -33,6 +39,7 @@
   text-align: right;
   margin: 0vw;
   display: flex;
+
   justify-content: right;
   flex-direction: row;
 }
@@ -40,9 +47,10 @@
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  float: left;
+  float: right;
   border: none;
   outline: none;
+
   cursor: pointer;  
   transition: 0.3s;
   text-align: center;
