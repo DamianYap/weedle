@@ -1,4 +1,4 @@
- body{
+body{
 	 background-color: #ffffff;
  }
 
@@ -6,57 +6,43 @@
 	 box-sizing: border-box; 
 }
 
- h3 {
-	font-size: 2.5vw;
-	}
-
-.headerImage {
-	 display: block;
-	 margin-left: auto;
-	 margin-right: auto;
-	 width: 70%;
-	 height: 20;
-}
- 
-#mainTitle {
-    text-align: left;
-    font-size: 2vw;
-
-
-	padding-left: 20vw;
-	padding-right: 20vw;
-    font-family: "Helvetica";
-    margin: auto;
-    min-height: 10vw;
-    max-height: 15vw;
-    padding-top: 2vw
-}
  /* Style the tab */
 .tab {
-  overflow: hidden;
-  border: 0.01vw solid #ccc;
+  overflow: hidden;    
+  border: 1px solid #ccc;
   background-color: #f1f1f1;
-  text-align: right;
-  margin: 0vw;
   display: flex;
+  flex-wrap: wrap;      
+}
 
-  justify-content: right;
-  flex-direction: row;
+#mainTitle {
+    padding: 2.5%;
+    margin: 0;
+    text-align: center;
+    font-size: 150%;
+    width: 100%;
+    font-family: "Helvetica"
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
   background-color: inherit;
-  float: right;
   border: none;
   outline: none;
-
-  cursor: pointer;  
+  cursor: pointer;
+  width: 50%;    
   transition: 0.3s;
   text-align: center;
-  font-size: 0.75vw;
+  font-size: 14px;
 }
 
+.headerImage {
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 50%;
+	 height: 20;
+}
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
@@ -96,8 +82,3 @@
 .row{
 	padding-left: 15vw;
 }
-
-
-
-
-
