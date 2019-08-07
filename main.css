@@ -49,6 +49,7 @@ font-size: 2.5vw;
   background-color: #f1f1f1;
   text-align: right;
   display:flex;    
+
   justify-content: right;
   flex-direction: row;
 }
@@ -59,11 +60,11 @@ font-size: 2.5vw;
   float: right;
   border: none;
   outline: none;
-  cursor: pointer;
-  padding: 1vw 5vw;
+  cursor: pointer;  
   transition: 0.3s;
-  text-align: center;   
-  font-size: 14px;
+  text-align: center;
+  font-size: 2vw;
+
 }
 
 /* Change background color of buttons on hover */
