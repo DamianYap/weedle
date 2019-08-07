@@ -1,9 +1,39 @@
- body{
+body{
 	 background-color: #ffffff;
  }
 
 *{
 	 box-sizing: border-box; 
+}
+
+ /* Style the tab */
+.tab {
+  overflow: hidden;    
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;      
+}
+
+#mainTitle {
+    padding: 2.5%;
+    margin: 0;
+    text-align: center;
+    font-size: 150%;
+    width: 100%;
+    font-family: "Helvetica"
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50%;    
+  transition: 0.3s;
+  text-align: center;
+  font-size: 14px;
 }
 
 .headerImage {
@@ -13,39 +43,6 @@
 	 width: 50%;
 	 height: 20;
 }
- 
-#mainTitle {
-    text-align: left;
-    font-size: 2vw;
-	padding-left: 20vw;
-	padding-right: 40vw;
-    font-family: "Helvetica"
-}
- /* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  text-align: right;
-  margin: 0vw;
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  text-align: center;
-  font-size: 14px;
-}
-
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
@@ -85,8 +82,3 @@
 .row{
 	padding-left: 15vw;
 }
-
-
-
-
-
