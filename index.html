@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" type="text/css" href="main.css">
 <link rel="stylesheet" type="text/css" media="screen and (max-width: 550px)" href="less500.css">
+<!-- from w3-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- up to here -->
 </head>
 <body>
 
 
 
-<div class="tab">
-	<h2 id="mainTitle">Weedle</h2>
-	<button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-	<button class="tablinks" onclick="openTab(event, 'Contact')">About</button>
-</div>
+<nav class = "navbar navbar-inverse fixed-top navbar-toggleable-x1 topnav">  <!-- navbar-default for normal -->
+	<div class = "container-fluid topnav"> 
+		<div class = "navbar-header ml-auto hidden-xs-down">
+			<a class = "navbar-brand topnav" href = "#" onclick = "openTab(event, 'Home')"> Weedle </a>
+		</div>
+		<ul class = "nav navbar-nav pull-right">
+			<li class = "tablinks" onclick = "openTab(event, 'Home')" id = "defaultOpen" ><a href ="#">Home</a></li>
+			<li class = "tablinks" onclick= "openTab(event, 'About')" ><a href ="#">About</a></li>
+		</ul>
+	</div>
+</nav>
 
 <div id="Home" class="tabcontent">
 	<img src = "https://i.imgur.com/GioSCyR.png" alt = "weedle" style = "max-height: 30%; max-width: 30%; padding-top: 3vw; padding-bottom: 2vw;">
@@ -21,7 +32,7 @@
   
 </div>
 
-<div id="Contact" class="tabcontent">
+<div id="About" class="tabcontent">
   <h3><font face = "Helvetica">Meet the creators</h3>
   
 <div class = "row">
