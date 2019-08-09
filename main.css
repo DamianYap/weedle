@@ -4,12 +4,16 @@ body, html {
   max-height: 100%;
   overflow-x: hidden;
   height: 100%;
+  min-height: 100vh;
+	
  
 }
 
 .navbar {
   overflow: hidden;
   background-color: #ff9aa2;
+  max-height: 9%;
+  
 }
 /* need to change colors etc */
 .navbar a {
@@ -19,7 +23,7 @@ body, html {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .navbar li {
@@ -93,4 +97,12 @@ row.after {
     content: "";
     display: table;
     clear:both;
+}
+
+.footer {
+    clear: both;
+    position: absolute;
+    bottom: 0;right: 0; left:0;
+    margin-top: -100%;
+	text-align: center
 }
