@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" type="text/css" href="main.css">
-<link rel="stylesheet" type="text/css" media="screen and (max-width: 550px)" href="less500.css">
 </head>
 <body>
-
-
-
-<div class="tab">
-	<h2 id="mainTitle">Weedle</h2>
-	<button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-	<button class="tablinks" onclick="openTab(event, 'Contact')">About</button>
+<div class="navbar" id="myTopnav">
+  <li class="navheader"><b>Weedle</b></li>
+  <a href="#" class = "tablinks" onclick = "openTab (event, 'Home')" id = "defaultOpen"><b>Home</b></a>
+  <a href="#" class = "tablinks" onclick = "openTab (event, 'About')"><b>About</b></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  
 </div>
-
-<div id="Home" class="tabcontent">
+<div class = "footer" id = "footer" >
+	<p>  © Copyright 2019 </p>
+</div>
+<div id = "Home" class = "tabcontent">
 	<img src = "https://i.imgur.com/GioSCyR.png" alt = "weedle" style = "max-height: 30%; max-width: 30%; padding-top: 3vw; padding-bottom: 2vw;">
-  <h3><font face = "Helvetica">Welcome to Weedle!</h3>  
-  
+	<h3><font face = "Helvetica">Welcome to Weedle!</h3>    
 </div>
-
-<div id="Contact" class="tabcontent">
-  <h3><font face = "Helvetica">Meet the creators</h3>
-  
-<div class = "row">
+<div id = "About" class = "tabcontent">
+	<h3 id = "creators"> Meet the Creators</h3>
+	<div class = "row">
 	<div class = "column" style= "background-color:#aaa;" >
 		<h4>Wesley</h4>
 		<p>This is the weasel</p>
 	</div>
-	<div class = "column" style= "background-color:#bbb">
+	<div class = "column" >
 		<h4>Damian</h4>
+		<img src = "https://i.imgur.com/KkE4wvj.png" alt = "DamianImage" style = "max-height: 120%; max-width: 120%;">
 		<p>This is the damian</p>
 	</div>
 </div>
+
+<div class = "footer" id = "footer">
+	<p>  © Copyright 2019 </p>
 </div>
 
 <script>
@@ -52,6 +55,5 @@ function openTab(evt, tabName) {
 }
 document.getElementById("defaultOpen").click();
 </script>
-   
 </body>
 </html> 
