@@ -3,17 +3,32 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src = "sheet.js"></script>
+		<script src = "http://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type = "text/javascript"> 
+			$(document).ready(function(){
+				$('li').on('click', function(){
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					})
+				})
+		</script>	
 	</head>
 	<body>
 		<div class="navbar">
 			<div id="title">
 				<b>Weedle</b>
 			</div>
-			<div class="button" onclick = "openTab (event, 'Home')" id = "defaultOpen">
-				<a href="#" class = "links"><b>Home</b></a>
-			</div>
-			<div class="button" onclick = "openTab (event, 'About')">	
-				<a href="#" class = "links">About</a>
+			<div class = "slider">
+				<ul>
+					<li class = "active">						
+						<a href="#" onclick = "openTab (event, 'Home')" id = "defaultOpen"><b>Home</b></a>						
+					</li>
+					<li>						
+						<a href="#" onclick = "openTab (event, 'About')"><b>About</b></a>						
+					</li>
+					<li class = "slide"></li>				
+				</ul>
 			</div>
 		</div>
 
