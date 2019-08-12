@@ -11,8 +11,6 @@ body, html{
 }
 
 img {
-	max-height: 260px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	max-height: 300px;
 	max-width: 300px;
 }
@@ -39,7 +37,6 @@ h3, h4 {
 	min-width: 48px;
 	max-width: 48px;
 	margin: 10px;
-	z-index: 2;
 	width: 10%;
 }
 
@@ -128,7 +125,7 @@ h3, h4 {
 
 .column-img {
 	padding: 1px;
-	min-height: 260px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .column-bio {
@@ -182,7 +179,7 @@ row.after {
   width :50%;
   margin-top: 10px;
   padding: 10px;
-  height: 300px;
+
 }
 
 .row {
@@ -204,76 +201,7 @@ row.after {
 	bottom: 0;
 }
 
-/* responsive */
-@media screen and (max-width: 550px) {
-  .navbar {
-		flex-direction: column;
-		width: 100%;
-		padding-right: 0px;
-		border-radius: 0px;
-  }
-  
-  .navbar .links, .navbar #title{
-		border-radius: 0px;
-		text-align: center;
-		
-  }
-	
-	.button {
-		background-color: #584ec9;
-		margin: 0px;
-		width: 100%;
-		padding: 0px;
-		max-width: none;
-		text-align: center;
-		border-radius: 0px;
-	}
-	
-	.button:hover {
-		background-color: ;
-		color: black;
-		width: 100%;
-		align-items: center;
-		margin-left: 0px;
-	}
-
-	.button.active {
-		background-color:#bfc94e;
-		color: #FFFFFF;
-		width: 100%;
-		align-items: center;
-		margin-left: 0px;
-	}
-	
-	.row {
-		flex-direction: column;
-	}
-	
-	img {
-		height
-		padding: 25px;
-	}
-	
-	.column {
-		width :100%;
-		margin: auto;
-		align-items: center;
-		padding: 25px;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-  body, html, .navbar {
-		max-width: 1200px;
-		margin: auto;
-  }
-  
-  .navbar {
-		border-radius: 5px;
-  }
-}
-
-/* tabs and slider */
+/* TABS AND SLIDER */
 ul{
 	display: flex;
 	
@@ -282,9 +210,8 @@ ul{
 	box-shadow: 0 0 0 5px #172597;
 	margin: 0;
 	padding: 0;
-	
-	
 }
+
 ul li {
 	list-style: none;
 	width: 130px;
@@ -335,7 +262,7 @@ ul li:nth-child(2).active ~ .slide{
 }
 
 /* MOBILE SITE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
 	.icon-nav {
 		display: none;
 	}
@@ -345,6 +272,7 @@ ul li:nth-child(2).active ~ .slide{
 		width: 100%;
 		padding-right: 0px;
 		border-radius: 0px;
+		padding-bottom: 5px;
   }
   
   .navbar #title{
@@ -382,6 +310,7 @@ ul li:nth-child(2).active ~ .slide{
 	
 	.row {
 		flex-direction: column;
+		width: 100%;
 	}
 	
 	.column {
@@ -389,6 +318,16 @@ ul li:nth-child(2).active ~ .slide{
 		margin: auto;
 		align-items: center;
 		padding: 25px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.column-title, .column-bio {
+		min-width: 300px;
+	}
+	
+	.column-bio{
+		padding-bottom: 10%;
 	}
 }
 
