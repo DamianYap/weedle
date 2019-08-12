@@ -148,14 +148,11 @@ row.after {
   }
 }
 
-
-
-
 /* tabs and slider */
 ul{
 	display: flex;
 	
-	transform: translate(-5%,-2%);
+	transform: translate(-2%,-5%);
 	background: #172597;
 	box-shadow: 0 0 0 5px #172597;
 	margin: 0;

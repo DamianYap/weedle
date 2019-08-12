@@ -4,15 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<script src = "sheet.js"></script>
-		<script src = "http://code.jquery.com/jquery-3.3.1.js"></script>
-		<script type = "text/javascript"> 
-			$(document).ready(function(){
-				$('li').on('click', function(){
-					$(this).siblings().removeClass('active');
-					$(this).addClass('active');
-					})
-				})
-		</script>	
+		<script src = "http://code.jquery.com/jquery-3.3.1.js"></script>			
 	</head>
 	<body>
 		<div class="navbar">
@@ -79,5 +71,13 @@
 				}
 				document.getElementById("defaultOpen").click();
 			</script>
+			<script type = "text/javascript"> 
+			$(document).ready(function(){
+				$('li').on('click', function(){
+					$(this).siblings().removeClass('active');
+					$(this).addClass('active');
+					})
+				})
+		</script>
 		</body>
 </html> 
