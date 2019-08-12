@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-<link rel="stylesheet" type="text/css" href="main.css">
-</head>
-<body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<div class="navbar">
+			<div id="title">
+				<b>Weedle</b>
+			</div>
+			<div class="button" onclick = "openTab (event, 'Home')" id = "defaultOpen">
+				<a href="#" class = "links"><b>Home</b></a>
+			</div>
+			<div class="button" onclick = "openTab (event, 'About')">	
+				<a href="#" class = "links"><b>About</b></a>
+			</div>
+		</div>
 
-<div class="navbar">
-  <div id="title"><b>Weedle</b></div>
-   <a href="#" class = "links" onclick = "openTab (event, 'Home')" id = "defaultOpen"><b>Home</b></a>
-   <a href="#" class = "links" onclick = "openTab (event, 'About')"><b>About</b></a>
-   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-   <i class="fa fa-bars"></i>	
-   </a>
-  </div>
-</div>
+		<!-- home page -->
+		<div id = "Home" class = "tabcontent">
+			<img src = "https://i.imgur.com/GioSCyR.png" alt = "weedle" style = "max-height: 30%; max-width: 30%; padding-top: 3vw; padding-bottom: 2vw;">
+			<h3><font face = "Helvetica">Welcome to Weedle!</h3>
+			
+			<div class = "navbar" id = "footer">
+				<p>© Copyright 2019</p>
+			</div>
+		</div>
 
-<!-- home page -->
-<div id = "Home" class = "tabcontent">
-	<img src = "https://i.imgur.com/GioSCyR.png" alt = "weedle" style = "max-height: 30%; max-width: 30%; padding-top: 3vw; padding-bottom: 2vw;">
-	<h3><font face = "Helvetica">Welcome to Weedle!</h3>   
-</div>
+		<div id = "About" class = "tabcontent">
 
-<div id = "About" class = "tabcontent">
-	<h3 id = "creators"> Meet the Creators</h3>
-	<div class = "row"">
-	<div class = "column">
-		<h4>Wesley</h4>
-		<img src="https://cdn.picrew.me/app/share/201908/19138_07mjZKvS.png" alt="WesleyImage" style = "max-height: 120%; max-width: 120%;">
-		<p>This is Wesley</p>
-	</div>
-	<div class = "column" >
-		<h4>Damian</h4>
-		<img src = "https://i.imgur.com/KkE4wvj.png" alt = "DamianImage" style = "max-height: 120%; max-width: 120%;">
-		<p>This is Damian</p>
-	</div>
-</div>
+			<h3 id = "creators"> Meet the Creators</h3>
+			
+			<div class = "row"">
+				<div class = "column">
+					<h4>Wesley</h4>
+					<img src="https://cdn.picrew.me/app/share/201908/19138_07mjZKvS.png" alt="WesleyImage">
+					<p>This is Wesley</p>
+				</div>
+			
+				<div class = "column">
+					<h4>Damian</h4>
+					<img src = "https://i.imgur.com/KkE4wvj.png" alt = "DamianImage">
+					<p>This is Damian</p>
+				</div>
 
-<div class = "footer" id = "footer">
-	<p>  © Copyright 2019 </p>
-</div>
+				<div class = "navbar" id = "footer">
+					<p>  © Copyright 2019 </p>
+				</div>
+			</div>
+		</div>
 
-<script>
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("links");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();
-</script>
-</body>
+			<script>
+				function openTab(evt, tabName) {
+					var i, tabcontent, tablinks;
+					tabcontent = document.getElementsByClassName("tabcontent");
+					for (i = 0; i < tabcontent.length; i++) {
+						tabcontent[i].style.display = "none";
+					}
+					tablinks = document.getElementsByClassName("button");
+					for (i = 0; i < tablinks.length; i++) {
+						tablinks[i].className = tablinks[i].className.replace(" active", "");
+					}
+					document.getElementById(tabName).style.display = "block";
+					evt.currentTarget.className += " active";
+				}
+				document.getElementById("defaultOpen").click();
+			</script>
+		</body>
 </html> 
