@@ -210,7 +210,14 @@ ul li:nth-child(2).active ~ .slide{
 	
 }
 
-
+.icon-nav{
+	height: 50;
+	min-width: 48px;
+	max-width: 48px;
+	margin: 10px;
+	z-index: 2;
+	width: 10%;
+}
 
 
 
