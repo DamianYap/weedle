@@ -1,5 +1,5 @@
-body, html {  
-  max-width: 100%;
+body, html{  
+  max-width: 1200px;
   max-height: 100%;
   overflow-x: hidden;
   height: 100%;
@@ -7,8 +7,17 @@ body, html {
   margin: 0;
 }
 
+img {
+	max-height: 300px;
+	max-width: 300px;
+}
+
+h3 {
+	font-variant: small-caps;
+}
+
 .navbar {
-  background-color: #000000;
+  background-color: #172597;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -16,11 +25,21 @@ body, html {
   align-items: center;
   width: 100%;
   min-height: 8%;
+	box-shadow: 5px 5px 5px grey;
+}
+
+.navbar .links {
+	text-decoration: none;
+	font-size: 200%;
+}
+
+.navbar .links:visited {
+	color: #FFFFFF;
 }
 
 .navbar #title {
-  color: #f2f2f2;
-  text-align: center;
+	color: #f2f2f2;
+  text-align: left;
   font-variant: small-caps;
   font-size: 5vh;
   width: 50%;
@@ -28,67 +47,27 @@ body, html {
 }
 
 /* need to change colors etc */
-.navbar .links {
-  text-decoration: none;	
-  color: #f2f2f2;
-  text-align: center;
-  font-size: 200%;
-  min-height: 7%;
-  width: 20%;
-  margin-left: 10px;
-  border-radius: 50px;
+.button {
+	text-align: center;
+	width: 15%;
+	min-width: 110px;
+	max-width: 150px;
+	border-radius: 5px;
+	margin: 5px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
 }
 
-.navbar .links:hover {
-  text-decoration: none;
-  background-color: #FFFFFF;
-  color: black;
-  width: 20%;
-  align-items: center;
-  margin-left: 10px;
+.button:hover {
+	background-color: #e4eda5;
+	color: #000000;
+	width: 15%;
 }
 
-.navbar .active {
-  text-decoration: none;
-  background-color:#87bde0;
-  color: white;
-  width: 20%;
-  align-items: center;
-  margin-left: 10px;
-  min-width: 110px;
-}
-
-.navbar .icon {
-  display: none;
-  padding-left: 0px;
-}
-
-/* responsive */
-@media screen and (max-width: 500px) {
-  .navbar {
-	flex-direction: column;
-	width: 100%;
-	padding-right: 0px;
-	border-radius: 0px;
-  }
-  
-  .navbar .links, .navbar .links:hover, .navbar .links .active, .navbar #title {
-	margin: auto;
-	width: 100%;
-	padding-top: 2px;
-	border-radius: 0px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  body, html{
-	max-width: 1200px;
-	margin: auto;
-  }
-  
-  .navbar {
-    border-radius: 5px;
-  }
+.button.active {
+	background-color:#8c981a;
+	color: #FFFFFF;
+	width: 15%;
 }
 
 *{
@@ -104,25 +83,111 @@ body, html {
 }
 
 .column {
-    float:left;
-    width :50%;
-    margin-top: 10px;
-    padding: 10px;
-    height: 300px;
+  width :50%;
+  margin-top: 10px;
+  padding: 10px;
+  height: 300px;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 row.after {
-    content: "";
-    display: table;
-    clear:both;
+  content: "";
+  display: table;
+  clear:both;
 }
 
-.footer {
-    clear: both;
-    position: absolute;
-    bottom: 0;right: 0; left:0;
-    margin-top: -100%;
-	text-align: center
+.navbar#footer {
+	text-align: center;
+	color: #FFFFFF;
+	position: fixed;
+	bottom: 0;
 }
 
+/* responsive */
+@media screen and (max-width: 550px) {
+  .navbar {
+		flex-direction: column;
+		width: 100%;
+		padding-right: 0px;
+		border-radius: 0px;
+  }
+  
+  .navbar .links, .navbar #title{
+		border-radius: 0px;
+		text-align: center;
+		
+  }
+	
+	.button {
+		background-color: #584ec9;
+		margin: 0px;
+		width: 100%;
+		padding: 0px;
+		max-width: none;
+		text-align: center;
+		border-radius: 0px;
+	}
+	
+	.button:hover {
+		background-color: ;
+		color: black;
+		width: 100%;
+		align-items: center;
+		margin-left: 0px;
+	}
+
+	.button.active {
+		background-color:#bfc94e;
+		color: #FFFFFF;
+		width: 100%;
+		align-items: center;
+		margin-left: 0px;
+	}
+	
+	.row {
+		flex-direction: column;
+	}
+	
+	img {
+		height
+		padding: 25px;
+	}
+	
+	.column {
+		width :100%;
+		margin: auto;
+		align-items: center;
+		padding: 25px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+  body, html, .navbar {
+		max-width: 1200px;
+		margin: auto;
+  }
+  
+  .navbar {
+		border-radius: 5px;
+  }
+}
+
+    © 2019 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
+    API
+    Training
+    Blog
+    About
 
