@@ -14,6 +14,9 @@
 					})
 				})
 		</script>	
+		<link rel = "stylesheet" type = "text/css" href = "swiper.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "swiperStyle.css">
+		<script src="swiper.min.js"></script>
 	</head>
 
 	<body>
@@ -41,7 +44,73 @@
 		<div id = "Home" class = "tabcontent">
 
 			<h3 id="welcome">Welcome to Weedle!</h3>
-			
+				<h2>Showcase - Example#1 Slider<h2>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide" style = "background-image:url(https://i.imgur.com/GioSCyR.png)" >Weedle</div>
+					  <div class="swiper-slide" ></div>
+					  <div class="swiper-slide" ></div>					  
+					</div>
+    
+				<div class="swiper-pagination"></div>
+				</div>
+				
+				
+				<h2> Showcase Example#2 3D Box<h2>
+				<div class="wrapper">
+				  <ul class="stage">    
+					<li class="scene">
+					  <div class="movie">
+						<div class="poster"></div>
+						<div class="info">
+						  <header>
+							<h1>It's a Wonderful Life</h1>
+							<span class="year">1946</span>
+							<span class="rating">PG</span>
+							<span class="duration">130 minutes</span>
+						  </header>
+						  <p>
+							In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
+						  </p>
+						</div>
+					  </div>
+					</li>
+					
+					<li class="scene">
+					  <div class="movie">
+						<div class="poster"></div>
+						<div class="info">
+						  <header>
+							<h1>It's a Wonderful Life</h1>
+							<span class="year">1946</span>
+							<span class="rating">PG</span>
+							<span class="duration">130 minutes</span>
+						  </header>
+						  <p>
+							In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
+						  </p>
+						</div>
+					  </div>
+					</li>
+					
+					<li class="scene">
+					  <div class="movie">
+						<div class="poster"></div>
+						<div class="info">
+						  <header>
+							<h1>It's a Wonderful Life</h1>
+							<span class="year">1946</span>
+							<span class="rating">PG</span>
+							<span class="duration">130 minutes</span>
+						  </header>
+						  <p>
+							In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
+						  </p>
+						</div>
+					  </div>
+					</li>
+				  </ul> 
+				</div>
 			<div class = "footer">
 				<p>© Copyright 2019</p>
 			</div>
@@ -97,6 +166,24 @@
 					evt.currentTarget.className += " active";
 				}
 				document.getElementById("defaultOpen").click();
+			</script>
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+				  effect: 'coverflow',
+				  grabCursor: true,
+				  centeredSlides: true,
+				  slidesPerView: 'auto',
+				  coverflowEffect: {
+					rotate: 50,
+					stretch: 0,
+					depth: 100,
+					modifier: 1,
+					slideShadows : true,
+				  },
+				  pagination: {
+					el: '.swiper-pagination',
+				  },
+				});
 			</script>
 		</body>
 </html> 
