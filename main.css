@@ -7,7 +7,7 @@ body, html{
   min-height: 100vh;
   margin: 0;
   padding: 0;
-	background-color: #FBE9E7;
+	background-color: rgb(255, 255, 255);
 }
 
 img {
@@ -20,10 +20,13 @@ h2 {
 }
 
 h3, h4 {
+	padding-top: 10px;
 	font-variant: small-caps;
+	font-size: 200%;
+	margin: auto;
 }
 
-#slider {
+#swiper {
 	display: none;
 }
 
@@ -33,7 +36,7 @@ h3, h4 {
 
 /* NAVIGATION */
 .navbar {
-  background-color: #FF5722;
+  background-color: rgb(92, 92, 92);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -41,7 +44,7 @@ h3, h4 {
   align-items: center;
   width: 100%;
   min-height: 8%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .icon-nav{
@@ -62,7 +65,7 @@ h3, h4 {
 }
 
 .navbar #title {
-	color: #FF3D00;
+	color: rgb(92, 92, 92);
   font-variant: small-caps;
   font-size: 5vh;
   width: 40%;
@@ -79,18 +82,6 @@ h3, h4 {
 	margin: 5px;
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
-}
-
-.button:hover {
-	background-color: #c94ebf;
-	color: #000000;
-	width: 15%;
-}
-
-.button.active {
-	background-color:#c9584e;
-	color: #FFFFFF;
-	width: 15%;
 }
 
 *{
@@ -126,17 +117,16 @@ h3, h4 {
 #welcome, #creator {
 	width: 100%;
 	margin: auto;
-	background-color: #DD2C00;
+	background-color: rgb(92, 92, 92);
 	color: #FFFFFF;
-	height: 40px;
+	height: 60px;
 	padding-top: 10px;
 }
 
 .column-title, .column-bio {
-	background-color: #DD2C00;
+	background-color: rgb(92, 92, 92);
 	color: #FFFFFF;
 	height: 15%;
-	padding-bottom: 10px;
 	max-height: 60px;
 	width: 100%;
 	max-width: 300px;
@@ -158,7 +148,7 @@ h3, h4 {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #DD2C00;
+  background-color: rgb(92, 92, 92);
   color: #FFFFFF;
   text-align: right;
 	padding-right: 10px;
@@ -194,12 +184,16 @@ h3, h4 {
 	flex-wrap: wrap;
 }
 
+.stage {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* TABS AND SLIDER */
 ul{
-	background-color: #FF5722;
+	background-color: rgb(92, 92, 92);
 	display: flex;
 	transform: translate(0%,-2%);
-	box-shadow: 0 0 0 5px #FF5722;
+	box-shadow: 0 0 0 5px rgb(92, 92, 92);
 	margin: 0;
 	padding: 0;
 }
@@ -226,10 +220,10 @@ ul li a {
 
 .slide{
 	position: absolute;
-	width: 120px;
+	width: 100px;
 	height: 10%;
 	bottom: 5px;
-	left: 0;
+	margin-left: 10px;
 	background: #fff;
 	z-index: -1;
 	transition: 0.5s;
@@ -247,7 +241,6 @@ ul li:nth-child(2).active ~ .slide{
 	left: 120px;
 	opacity: 1;
 }
-
 
 /* box */
 .wrapper {
@@ -309,16 +302,10 @@ ul li:nth-child(2).active ~ .slide{
   height: 260px;
   position: absolute;
   bottom: 0;
-  box-shadow: 0 30px 50px rgba(0,0,0,0.3);
   transform-origin: 100% 100%;
   transform: rotateX(90deg) translateY(130px);
   transition: box-shadow 350ms;
 }
-
-.movie:hover::after {
-  box-shadow: 20px -5px 50px rgba(0,0,0,0.3);
-}
-
 
 .info header {
   color: #FFF;
@@ -348,7 +335,6 @@ ul li:nth-child(2).active ~ .slide{
   line-height: 1.4em;
   border-top: 10px solid #555;
 }
-
 
 .movie .poster,
 .movie .info,
@@ -400,7 +386,7 @@ ul li:nth-child(2).active ~ .slide{
 /* MOBILE SITE */
 @media screen and (max-width: 660px) {
 
-	#slider {
+	#swiper {
 		display: inline;
 	}
 
@@ -426,31 +412,6 @@ ul li:nth-child(2).active ~ .slide{
 		text-align: center;
 		padding: 10px 10px;
   }
-	
-	.button {
-		margin: 0px;
-		width: 100%;
-		padding-top: 8px;
-		max-width: none;
-		border-radius: 0px;
-		height: 50px;
-	}
-	
-	.button:hover {
-		background-color: #c94ebf;
-		color: black;
-		width: 100%;
-		align-items: center;
-		margin-left: 0px;
-	}
-
-	.button.active {
-		background-color:#c9584e;
-		color: #FFFFFF;
-		width: 100%;
-		align-items: center;
-		margin-left: 0px;
-	}
 	
 	.row, .stage{
 		flex-direction: column;
@@ -493,21 +454,21 @@ ul li:nth-child(2).active ~ .slide{
 		width: 100%;
 		display: flex;
 		flex-direction: row;
-		margin: auto;
+		flex-wrap: nowrap;
 	}
 	
-	.tabcontent, .row{
-		margin-left: 10%;
-		width: 90%;
+	.tabcontent {
+		width: 80%;
+		margin-left: 20%;
 	}
   
   .navbar {
-		width: 10%;
+		width: 20%;
 		flex-direction: column;
-		min-width: 270px;
 		z-index: 1;
 		position: fixed;
 		height: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 	
 	.navbar #title {	
@@ -521,7 +482,12 @@ ul li:nth-child(2).active ~ .slide{
 	}
 
 	.stage {
-		margin-left: 8%;
 		justify-content: flex-end;
 	}
+
+	#welcome, #creator{
+		width: 100%;
+	}
+
+
 }
