@@ -408,6 +408,10 @@ ul li:nth-child(2).active ~ .slide{
 /* MOBILE SITE */
 @media screen and (max-width: 660px) {
 
+	html {
+		min-width: 400px;
+	}
+
 	#swiper {
 		display: inline;
 	}
