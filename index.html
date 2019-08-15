@@ -1,171 +1,214 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-		
-		<!--Links to external CSS files-->
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel = "stylesheet" type = "text/css" href = "swiper.min.css">
-		<link rel = "stylesheet" type = "text/css" href = "swiperStyle.css">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<!--Links to external JS files-->
-		<script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.js"></script>
-		<script language="javascript" type="text/javascript" src="js/sheet.js"></script>
-		<script language="javascript" type="text/javascript" src="js/swiper.min.js"></script>
+    <!--Links to external CSS files-->
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="swiperStyle.css" />
 
-	</head>
+    <!--Links to external JS files-->
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-3.3.1.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/sheet.js"
+    ></script>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="js/swiper.min.js"
+    ></script>
+  </head>
 
-	<body>
-		<div class="navbar">
+  <body>
+    <div class="navbar">
+      <img
+        class="icon-nav"
+        src="https://image.flaticon.com/icons/svg/1583/1583581.svg"
+        alt="weedle"
+      />
 
-			<img class="icon-nav" src="https://image.flaticon.com/icons/svg/1583/1583581.svg" alt = "weedle">
-		
-			<div id="title">
-				<b>Enriched</b>
-			</div>
+      <div id="title">
+        <b>Enriched</b>
+      </div>
 
-			<div class="slider">
-				<ul>
-					<li class = "active">						
-						<a href="#" onclick = "openTab (event, 'Home')" id = "defaultOpen"><b>Home</b></a>						
-					</li>
-					<li>						
-						<a href="#" onclick = "openTab (event, 'About')"><b>About</b></a>						
-					</li>
-					<li class="slide"></li>				
-				</ul>
-			</div>
-		</div>
+      <div class="slider">
+        <ul>
+          <li class="active">
+            <a href="#" onclick="openTab (event, 'Home')" id="defaultOpen"
+              ><b>Home</b>
+            </a>
+          </li>
+          <li>
+            <a href="#" onclick="openTab (event, 'About')"><b>About</b></a>
+          </li>
+          <li class="slide"></li>
+        </ul>
+      </div>
+    </div>
 
-		<!-- home page -->
-		<div id = "Home" class = "tabcontent">
-			<h3 id="welcome">Welcome!</h3>
-				<div id="swiper">
-					<h2>Showcase - Example#1 Slider</h2>
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide" ></div>
-							<div class="swiper-slide" ></div>
-							<div class="swiper-slide" ></div>					  
-						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-				
-				<div id="box">
-					<h2> Showcase Example#2 3D Box</h2>
-					<div class="wrapper">
-						<ul class="stage">    
-							<li class="scene">
-								<div class="movie">
-								<div class="poster"></div>
-								<div class="info">
-									<header>
-									<h1>It's a Wonderful Life</h1>
-									<span class="year">1946</span>
-									<span class="rating">PG</span>
-									<span class="duration">130 minutes</span>
-									</header>
-									<p>
-									In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
-									</p>
-								</div>
-								</div>
-							</li>
-							
-							<li class="scene">
-								<div class="movie">
-								<div class="poster"></div>
-								<div class="info">
-									<header>
-									<h1>It's a Wonderful Life</h1>
-									<span class="year">1946</span>
-									<span class="rating">PG</span>
-									<span class="duration">130 minutes</span>
-									</header>
-									<p>
-									In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
-									</p>
-								</div>
-								</div>
-							</li>
-							
-							<li class="scene">
-								<div class="movie">
-								<div class="poster"></div>
-								<div class="info">
-									<header>
-									<h1>It's a Wonderful Life</h1>
-									<span class="year">1946</span>
-									<span class="rating">PG</span>
-									<span class="duration">130 minutes</span>
-									</header>
-									<p>
-									In Bedford Falls, New York on Christmas Eve, George Bailey is deeply troubled. Prayers for his well-being from friends and family reach Heaven. Clarence Odbody, Angel Second Class, is assigned to visit Earth to save George, thereby earning his wings. Franklin and Joseph, the head angels, review George's life with Clarence.
-									</p>
-								</div>
-								</div>
-							</li>
-						</ul> 
-					</div>
-				</div>
-			<div class = "footer">
-				<p>© Copyright 2019</p>
-			</div>
-		</div>
+    <!-- home page -->
+    <div id="Home" class="tabcontent">
+      <div id="parallelogram">
+        <div id="box-shape"></div>
+        <h3 id="welcome">Welcome!</h3>
+      </div>
 
-		<div id = "About" class = "tabcontent">
+      <div id="swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
 
-			<h3 id = "creator"> Meet the Creators</h3>
+      <div id="box">
+        <div class="wrapper">
+          <ul class="stage">
+            <li class="scene">
+              <div class="movie">
+                <div class="poster"></div>
+                <div class="info">
+                  <header>
+                    <h1>It's a Wonderful Life</h1>
+                    <span class="year">1946</span>
+                    <span class="rating">PG</span>
+                    <span class="duration">130 minutes</span>
+                  </header>
+                  <p>
+                    In Bedford Falls, New York on Christmas Eve, George Bailey
+                    is deeply troubled. Prayers for his well-being from friends
+                    and family reach Heaven. Clarence Odbody, Angel Second
+                    Class, is assigned to visit Earth to save George, thereby
+                    earning his wings. Franklin and Joseph, the head angels,
+                    review George's life with Clarence.
+                  </p>
+                </div>
+              </div>
+            </li>
 
-			<div class="row">
-				<div class="column">
-					<div class="column-title">
-						<h4>Wesley</h4>
-					</div>
-					
-					<img class="column-img" src="https://cdn.picrew.me/app/share/201908/19138_07mjZKvS.png" alt="WesleyImage">
-					
-					<div class="column-bio">
-						<p>Bio:</p>
-					</div>
-				</div>
-				
-				<div class="column">
-					<div class="column-title">
-						<h4>Damian</h4>
-					</div>
-					
-					<img class="column-img" src = "https://i.imgur.com/KkE4wvj.png" alt = "DamianImage">
-					
-					<div class="column-bio">
-						<p>Bio:</p>
-					</div>
-				</div>
+            <li class="scene">
+              <div class="movie">
+                <div class="poster"></div>
+                <div class="info">
+                  <header>
+                    <h1>It's a Wonderful Life</h1>
+                    <span class="year">1946</span>
+                    <span class="rating">PG</span>
+                    <span class="duration">130 minutes</span>
+                  </header>
+                  <p>
+                    In Bedford Falls, New York on Christmas Eve, George Bailey
+                    is deeply troubled. Prayers for his well-being from friends
+                    and family reach Heaven. Clarence Odbody, Angel Second
+                    Class, is assigned to visit Earth to save George, thereby
+                    earning his wings. Franklin and Joseph, the head angels,
+                    review George's life with Clarence.
+                  </p>
+                </div>
+              </div>
+            </li>
 
-				<div class="footer">
-					<p>  © Copyright 2019 </p>
-				</div>
-			</div>
-		</div>
-		<script>
-			var swiper = new Swiper('.swiper-container', {
-				effect: 'coverflow',
-				grabCursor: true,
-				centeredSlides: true,
-				slidesPerView: 'auto',
-				coverflowEffect: {
-				rotate: 50,
-				stretch: 0,
-				depth: 100,
-				modifier: 1,
-				slideShadows : true,
-				},
-				pagination: {
-				el: '.swiper-pagination',
-				},
-			})
-			document.getElementById("defaultOpen").click();
-		</script>
-	</body>
-</html> 
+            <li class="scene">
+              <div class="movie">
+                <div class="poster"></div>
+                <div class="info">
+                  <header>
+                    <h1>It's a Wonderful Life</h1>
+                    <span class="year">1946</span>
+                    <span class="rating">PG</span>
+                    <span class="duration">130 minutes</span>
+                  </header>
+                  <p>
+                    In Bedford Falls, New York on Christmas Eve, George Bailey
+                    is deeply troubled. Prayers for his well-being from friends
+                    and family reach Heaven. Clarence Odbody, Angel Second
+                    Class, is assigned to visit Earth to save George, thereby
+                    earning his wings. Franklin and Joseph, the head angels,
+                    review George's life with Clarence.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <p>© Copyright 2019</p>
+      </div>
+    </div>
+
+    <div id="About" class="tabcontent">
+      <h3 id="creator">Meet the Creators</h3>
+
+      <div class="row">
+        <div class="column">
+          <div class="column-title">
+            <h4>Wesley</h4>
+          </div>
+
+          <img
+            class="column-img"
+            src="https://cdn.picrew.me/app/share/201908/19138_07mjZKvS.png"
+            alt="WesleyImage"
+          />
+
+          <div class="column-bio">
+            <p>Bio:</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="column-title">
+            <h4>Damian</h4>
+          </div>
+
+          <img
+            class="column-img"
+            src="https://i.imgur.com/KkE4wvj.png"
+            alt="DamianImage"
+          />
+
+          <div class="column-bio">
+            <p>Bio:</p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p>© Copyright 2019</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
